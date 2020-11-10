@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*contenedor de todo nuestro menu y nuestro contenido*/
+#cont{
+    background: #ffffff;
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    padding: 100px;
+
+    /*flex*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*header*/
+header{
+    position: absolute;
+    top: 0;/*PEGADO ARRIBA*/
+    left: 0;/*PEGADO ARRIBA*/
+    width: 100%;
+    padding: 20px 100px;
+
+    /*flex*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*para el logo*/
+header .logo{
+    position: relative;
+    max-width: 80px;
+}
+
+/*para nuestro menu*/
+header ul{
+    position: relative;
+    display: flex;
+}
+
+/*para nuestros elementos*/
+header ul li{
+    list-style: none;
+}
+
+/*para cada link de la lista*/
+header ul li a{
+    display: inline-block;
+    color: #333;
+    font-weight: bold;
+    margin-left:40px;
+    text-decoration: none;
+}
+
+/*----------------------------PARA EL CONTENIDO------------------------------*/
+/*contenedor de las imagenes y del texto*/
+#contenido{
+    position: relative;
+    width: 100%;
+
+    /*flex*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*contenedor de los elemetos de texto*/
+#contenido .textbox{
+    position: relative;
+    max-width: 600px;
+}
+
+/*para el estilo de h2*/
+#contenido .textbox h2{
+    color: #333;
+    font-size: 4em;
+    line-height: 1.4em;
+    font-weight: bold;
+}
+
+#contenido .textbox h2 span{
+    color: #017143;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#contenido .textbox h2 p{
+    color: #333;
+}
+
+/*para el a de nuetro contenedor*/
+#contenido .textbox a{
+    display: inline-block;
+    background: #017143;
+    margin-top: 20px;
+    padding: 8px 20px;
+    color: #ffffff;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+/*CONTENEDOR DE NUESTRA IMAGEN*/
+#contenido .imgBox{
+    width: 600px;
+    padding-right: 50px;
+    margin-top: 50px;
+
+    /*flex*/
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+/*para nuestra imagen*/
+#contenido .imgBox img{
+    max-width: 340px;
+}
+
+/*para el thumb*/
+.thumb{
+    position: absolute;/*para mover el contenedor*/
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+
+    /*flex*/
+    display: flex;
+}
+
+/*para cada elemento li de nuesta lista*/
+.thumb li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer; 
+    transition: 0.5s;
+}
+
+.thumb li:hover{
+    transform: translateY(-15px);
+}
+
+.thumb li img{
+    max-width: 60px;
+}
+
+/*contenedor de redes*/
+.redes{
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    transition: 0.5s;
+    
+    /*flex*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.redes li{
+    list-style: none;
+}
+
+.redes li:hover{
+    transform: translateX(-5px);
+    transition: 0.5s;
+}
+
+.redes li a{
+    display: inline-block;
+    margin: 5px 0;
+    transform: scale(0.6);
+    filter: invert(1); /*cambio del color de iconos*/
+}
+
+/*para el circulo de color*/
+.circulo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #017143;
+    clip-path: circle(600px at right 800px); /*para creacion del circulo y su pocision*/
+}

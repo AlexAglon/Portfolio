@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*para centrar nuestros elemetons dentro del padre*/
+.cont-principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: coral;
+}
+
+/*contenedor de nuestras tarjetas*/
+.container{
+    position: relative;/*ponemos al padre relative*/
+    width: 1100px;
+    height: 400px;
+    background: blue;
+}
+
+/*contenedor del contenido de nuestras tarjetas*/
+.container .card{
+    position: absolute; /*poneos al hijo absolute para poder moverlo dentro del padre */
+    top: calc(50% - 200px);/*lo alejamos un 0% de arriba del contenedor padre*/
+    left: 50%;/*lo alejamos un 50% de la izquierda del cont padre*/
+    /*va a mocer nuestro elemento en posicion (x,y) en este caso para que quede al centro*/
+    /*rotate va a rotar nustro elemetno*/
+    /*skew ca a mover nuestro elemento en posision x y y*/
+    transform: translate(-50%,calc(100px * var(--i))) rotate(40deg) skew(-20deg,-5deg);
+    width: 300px;
+    height: 400px;
+    background: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    box-shadow: 25px 25px 100px rgba(0,0,0,0.2);
+    transition: 0.5s;
+}
+
+/*el contenido de nuestras tarjetas*/
+.container .card .content{
+   color: #444;
+   opacity: 0; 
+   transition: 0.5s;/*el tiempo que tardara la animacion*/
+   transform: translateY(50px);/*lo movemos 50px hacia abajo en y */
+   padding: 25px;
+   text-align: center;
+}
+
+/*cuando hagamos un hover al container hara lo siguiente en content*/
+.container:hover .card .content{
+    opacity: 1;
+    transform: translateY(0px);/*cuando hagamos un hover a el contenedor padre lo moveremos a 0 en y*/
+}
+
+/*opasidades para cada hijo*/
+.container .card:nth-child(1){
+    opacity: 1;
+}
+
+.container .card:nth-child(2){
+    opacity: 0.8;
+}
+
+.container .card:nth-child(3){
+    opacity: 0.6;
+}
+
+/*para reacomodar las tarjetas en fila de 3*/
+.container:hover .card{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    box-shadow: 0px 25px 50px rgba(0,0,0,0.2);
+    transition: 0.5s;
+    transform: translate(calc(-50% + calc(350px * var(--i))),-40%)  rotate(0deg) skew(0deg,0deg);
+    opacity: 1;
+}
+
