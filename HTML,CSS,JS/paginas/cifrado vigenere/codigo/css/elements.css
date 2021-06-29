@@ -1,0 +1,52 @@
+/*contenedor padre*/
+#f-section{
+    width: 100%;
+    height: 600px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*contenedor de las tarjetas*/
+#cont-element{
+    background: rgb(0, 0, 0);
+    color: white;
+    width: 1000px;
+    height: 400px;
+    padding: 25px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/*para cada tarjeta de la pantalla principal*/
+.element{
+    background:rgba(128, 128, 128, 0.322);
+    width: 250px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*para la imagen de las tarjetas*/
+.element img{
+    width: 120px;
+}
+
+/*para el titulo de las tarjetas*/
+.element h1{
+    font-size: 26px;
+    text-align: center;
+    color: white;
+}
+
+/*para el texto de las tarjetas*/
+.element p{
+    width: 150px;
+    text-align: center;
+    color: white;
+}
+
+/*tarjetas */

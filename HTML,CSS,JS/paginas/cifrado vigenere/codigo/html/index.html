@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/uikit.min.css">
+        <link rel="stylesheet" href="../css/index.css">
+        <script src="../js/uikit.min.js"></script>
+        <script src="../js/uikit-icons.min.js"></script>
+    </head>
+    <body>
+        <!--menu-->
+       <header>
+            <nav id="menu">
+                <!--contenedor de nuestro logo-->
+                <div id="logo">
+                    <img src="../assets/images/The Black coders.png" alt="logo black coders">
+                </div>
+                <!--contenedor de las opciones que tendra nuestro menu-->
+                <div id=options>
+                    <a id="inicio-B" href="index.html">Inicio</a>
+                    <a id="log-in-B" href="inicioS.html"><div>Iniciar sesion</div></a>
+                    <a id="sign-in-B" href="registro.html"><div>Registrarse</div></a>
+                </div>
+            </nav>
+       </header>
+
+       <!--seccion principal de nuestra pagina-->
+       <main>
+           <!--seccion de carrusel de imagenes-->
+           <section id="slides">
+            <div class="uk-position-relative uk-visible-toggle" tabindex="-1" uk-slideshow="animation: fade;max-height: 500;autoplay: true;autoplay-interval: 4000">
+
+                <ul class="uk-slideshow-items">
+                    <li>
+                        <img src="../assets/images/1.png" alt="" uk-cover>
+                        <div class="uk-position-center uk-position-small uk-text-center uk-light">
+                            <h2 class="uk-margin-remove">Recuerda que...</h2>
+                            <p class="uk-margin-remove">En black coders lo importante es la calidad de nuestros productos</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="../assets/images/2.png" alt="" uk-cover>
+                        <div class="uk-position-bottom uk-position-medium uk-text-center uk-light">
+                            <h3 class="uk-margin-remove" style="color: black; font-weight: 500">No hay limite</h3>
+                            <p class="uk-margin-remove" style="color: black;">No importa si es un shooter o un FVP black coders puede hacerlo</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="../assets/images/3.png" alt="" uk-cover>
+                        <div class="uk-position-top uk-position-medium uk-text-center uk-light">
+                            <h3 class="uk-margin-remove">Intenta probar nuestros titulos retro</h3>
+                            <p class="uk-margin-remove">No importa cuanto tiempo pase siempre seran igual de buenos</p>
+                        </div>
+                    </li>
+                </ul>
+            
+                <div class="uk-light">
+                    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+                    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+                </div>
+            
+            </div>
+           </section>
+
+           <!--seccion de informacion-->
+           <section id="f-section">
+               <!--contenedor de nuestras tarjetas-->
+                <div id="cont-element">
+                    <!--tarjeta que contiene una imagen y un texto-->
+                    <div class="element">
+                        <img src="../assets/images/11.png" alt="">
+                        <div>
+                            <h1>Seguridad</h1>
+                            <p>manten tus datos seguros con el nuevo sistema de cifrado</p>
+                        </div>
+                    </div>
+
+                    <div class="element">
+                        <img src="../assets/images/21.png" alt="">
+                        <div>
+                            <h1>Acceso remoto</h1>
+                            <p>No importa donde estes puedes consultar tu informacion en cualquier momento</p>
+                        </div>
+                    </div>
+
+                    <div class="element">
+                        <img src="../assets/images/31.png" alt="">
+                        <div>
+                            <h1>Testing</h1>
+                            <p>Haz pruebas de cualquier proyecto, sin interrupciones </p>
+                        </div>
+                    </div>
+                    
+                </div>
+           </section>
+
+           <!--footer-->
+           <footer>
+                <div class="footer-ele">
+                    <p>Todos los derechos reservados</p>
+                    <p><a href="https://github.com/AlexAglon/cifradoV">Repo de github</a></p>
+                </div>
+           </footer>
+       </main>
+    </body>
+</html>

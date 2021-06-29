@@ -1,0 +1,717 @@
+:root{
+    --text-color:#9B3472;
+    --text-tittle: #cb4d8c
+} 
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*----------------para el nav----------------*/
+/*Navbar*/
+
+/*Contenedor trasero del menu de opciones*/
+.nav-cont{
+    background: transparent;
+    color:var(--text-color) !important;
+}
+
+/*Donde estan nuestras opciones*/
+.navbar{
+    background: transparent;
+    color: var(--text-color) !important;
+}
+.nav-text{
+    text-decoration: none;
+    color: var(--text-color) !important;
+}
+
+/*pading de nuestro nombre de empresa*/
+.name{
+    padding: 1%;
+}
+/*para acomodar nuestro nombre y nuestro menu separados */
+.cont{
+    background: transparent;
+    color: var(--text-color) !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*Seccion principal*/
+.section1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*Contenedor del texto y de las imagenes*/
+.info-princ{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.textp{
+    font-size: 34px;
+    color: var(--text-tittle);
+    margin-left: 0px;
+    margin-bottom: 50px;
+}
+
+.imgp{
+    width: 400px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+
+.imgp:nth-of-type(2){
+    width: 150px;
+    margin-left: -180px;
+}
+
+.imgpp{
+    width: 55%;
+}
+
+.text-principal{
+    color: rgb(57, 55, 55);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.Logo-store-principal{
+    width: 150px;
+}
+
+/*SEGUNDA SECCION*/
+#sec-section{
+    background: url();
+}
+
+.cont{
+    background: transparent;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.cardG{
+    width: 33.3333%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*Para las imagenes de tipo de contenedor non*/
+.imgCardNone:nth-of-type(1){
+    width: 150px;
+}
+
+.imgCardNone:nth-of-type(2){
+    width: 250px;
+}
+
+/*Para las imagenes de tipo de contenedor non*/
+.imgCardPair:nth-of-type(1){
+    width: 250px;
+}
+
+.imgCardPair:nth-of-type(2){
+    width: 150px;
+}
+
+
+
+/*Para el contenedor de texto*/ 
+.text-card{
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-card h1{
+    font-size: 16px;
+    text-align: center;
+}
+
+.text-card p{
+    font-size: 14px;
+    text-align: center;
+}
+
+
+
+/*TERCERA SECCION*/
+
+#fourSec{
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*Estilos para titulo y parrafo*/
+.cont-text-sec-four{
+    width: 400px; 
+    margin-left: 40px;
+}
+
+.cont-text-sec-four h2,.cont-text-sec-four p{
+    text-align: justify;
+}
+
+.cont-text-sec-four h2{
+    font-size: 36px;
+    color: var(--text-tittle);
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+/*imagen*/
+#fourSec img{
+    width:750px;
+}
+
+/*Quinta seccion*/
+#fiveSec{
+   background: linear-gradient(0deg, rgba(83,125,52,1) 0%, rgba(113,139,82,1) 64%, rgba(136,150,104,1) 100%);
+   width: 100%; 
+   height: 600px; 
+}
+
+/*Para centrafr imagenes*/
+.cont-sec-five{
+    height: 100%;/*Nuestro contenedor debe de ser de la misma medida que el padre*/
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+}
+
+/*Para que todas las imagenes tengasn position relative y podamos moverlas*/
+.movement-img{
+    position: relative;
+}
+
+/*Acomodando las imagenes*/
+#img1{
+    top: -100px;
+    width: 250px;
+}
+
+#img2{
+    top: 150px;
+    width: 250px;
+}
+
+#img3{
+    top: 150px;
+    width: 250px;
+}
+
+#img4{
+    top: -100px;
+    right: 50px;
+    width: 250px;
+}
+
+/*Para la parte central (logo,texto,logos de tiendas)*/
+.middle-five{
+    position: relative;
+    top: -100px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:center;
+}
+
+/*Logo de jalo en blanco */
+.middle-five img{
+    width: 150px;
+}
+
+/*Para parrafo*/
+.middle-five p{
+    color: whitesmoke;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+/*Para los logos de las tiendas*/
+.middle-storelogos-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.middle-storelogos-content img:nth-of-type(1){
+    margin-right: 10px;
+}
+
+
+/*Footer*/
+footer{
+    background: #c61367;
+    width:100%;
+    height: 400px;
+
+    display: flex !important;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+/*Menu de la derecha*/
+.footer-men{
+    text-align: right;
+    margin-right: 100px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.footer-men a{
+    text-decoration: none;
+    color: white;
+    margin-bottom: 10px;
+}
+
+/*Contenedotes de las partes del menu para una mejor adaptacion en responsive (movil)*/
+.footer-men-uno{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-men-dos{
+    display: flex;
+    flex-direction: column;
+}
+
+/*Para los iconos de la izquierda*/
+.footer-ic{
+    margin-left: 100px;
+    width: 250px;
+    height: 200px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-ic p{
+    color: white;
+    font-size: 12px;
+}
+
+.logoFooter{
+    width: 100px;
+}
+
+.media-logos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;   
+}
+
+.media-logos img:nth-of-type(1){
+    width: 50px;
+    margin-right: 10px;
+}
+
+.media-logos img:nth-of-type(2){
+    width: 50px;
+    margin-right: 10px;
+}
+
+.media-logos img:nth-of-type(3){
+    width: 50px;
+    margin-right: 10px;
+}
+
+.media-logos img:nth-of-type(4){
+    width: 50px;
+}
+
+/*Para pantallas de 1024 pixeles*/
+
+@media only screen and (max-width: 1025px) {
+    /*Acomodando las imagenes*/
+#img1{
+    width: 200px;
+    
+}
+
+#img2{
+    width: 200px;
+}
+
+#img3{
+    width: 200px;
+}
+
+#img4{
+    width: 200px;
+}
+
+/*Logo de jalo en blanco */
+.middle-five img{
+    width: 100px;
+}
+
+/*Para parrafo*/
+.middle-five p{
+    font-size: 26px;
+}
+
+.middle-storelogos-content img:nth-of-type(1){
+    margin-right: 10px;
+}
+  }
+
+
+  @media only screen and (max-width: 769px) {
+    /*Seccion principal*/
+    .textp{
+        font-size: 28px;
+        margin-top: 20px;
+    }
+    
+    .imgp{
+        width: 300px;
+        margin-left: 50px;
+        margin-bottom: 50px;
+    }
+    
+    .imgp:nth-of-type(2){
+        width: 100px;
+    }
+    /*Segunda seccion*/
+    .imgCardNone:nth-of-type(1){
+        width: 100px;
+    }
+    
+    .imgCardNone:nth-of-type(2){
+        width: 180px;
+    }
+    
+    /*Para las imagenes de tipo de contenedor non*/
+    .imgCardPair:nth-of-type(1){
+        width: 180px;
+    }
+    
+    .imgCardPair:nth-of-type(2){
+        width: 100px;
+    }
+
+    /*Quinta seccion*/
+
+ /*Acomodando las imagenes*/
+ #img1{
+     top: -100px;
+     left: -20px;
+     width: 180px;
+ }
+ 
+ #img2{
+     top: 120px;
+     left: -70px;
+     width: 180px;
+ }
+ 
+ #img3{
+     top: 120px;
+     left: -120px;
+     width: 180px;
+ }
+ 
+ #img4{
+     top: -100px;
+     right: 50px;
+     left: -160px;
+     width: 180px;
+ }
+ 
+ /*Para la parte central (logo,texto,logos de tiendas)*/
+ .middle-five{
+     top: -100px;
+     left: -100px;
+ }
+ 
+ /*Logo de jalo en blanco */
+ .middle-five img{
+     width: 100px;
+ }
+ 
+ /*Para parrafo*/
+ .middle-five p{
+     color: whitesmoke;
+     font-size: 24px;
+     font-weight: bold;
+     text-align: center;
+ }
+ 
+ 
+ /*Para los logos de las tiendas*/
+ .middle-storelogos-content{
+     display: flex;
+     flex-direction: row;
+     flex-wrap: nowrap;
+     justify-content: center;
+     align-items: center;
+ }
+ 
+ .middle-storelogos-content img:nth-of-type(1){
+     margin-right: 10px;
+ } 
+    
+  }
+
+  @media only screen and (max-width: 476px) {
+    
+}
+
+  @media only screen and (max-width: 426px) {
+    /*Seccion principal*/
+/*Para el control del contenido de la seccion*/
+.section1{
+    display: flex;
+    flex-direction: column;
+}
+
+/*Contenedor del texto y de las imagenes*/
+.info-princ{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.textp{
+    text-align: center;
+    font-size: 30px;
+    margin-left: 50px
+}
+
+.imgp{
+    width: 200px;
+}
+
+.imgp:nth-of-type(2){
+    width: 100px;
+    margin-left: 30px;
+}
+
+.imgpp{
+    width: 450px;
+}
+
+
+
+/*SEGUNDA SECCION*/
+.cont{
+    background: transparent;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+/*Para ordenar las tarjetas que no siguen el patron*/
+.m-pair1{
+    order: 1;
+}
+
+.m-pair2{
+    order: 2;
+}
+
+.m-pair3{
+    order: 3;
+}
+
+/*TERCERA SECCION*/
+#fourSec{
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+/*Estilos para titulo y parrafo*/
+.cont-text-sec-four{
+    width: 350px; 
+    margin-left: 40px;
+}
+
+.cont-text-sec-four h2,.cont-text-sec-four p{
+    text-align: justify;
+}
+
+.cont-text-sec-four h2{
+    font-size: 28px;
+    color: var(--text-tittle);
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.cont-text-sec-four p{
+    font-size: 20px;
+}
+
+/*imagen*/
+#fourSec img{
+    width:300px;
+}
+
+/*Quinta seccion*/
+#fiveSec{
+    background: linear-gradient(0deg, rgba(83,125,52,1) 0%, rgba(113,139,82,1) 64%, rgba(136,150,104,1) 100%);
+    width: 100%; 
+    height: 900px;
+ }
+ 
+ /*Para centrafr imagenes*/
+ .cont-sec-five{
+     height: 100%;/*Nuestro contenedor debe de ser de la misma medida que el padre*/
+ 
+     display: flex;
+     flex-direction: column;
+ }
+ 
+ /*Para que todas las imagenes tengasn position relative y podamos moverlas*/
+ .movement-img{
+     position: relative;
+ }
+ 
+ /*Acomodando las imagenes*/
+ #img1{
+     top: 400px;
+     left: -100px;
+     width: 200px;
+ }
+ 
+ #img2{
+     top: 400px;
+     left: -80px;
+     width: 200px;
+ }
+ 
+ #img3{
+     top: -110px;
+     left: 100px;
+     width: 200px;
+ }
+ 
+ #img4{
+     top: -508px;
+     left: 100px;
+     width: 200px;
+ }
+ 
+ /*Para la parte central (logo,texto,logos de tiendas)*/
+ .middle-five{
+     position: relative;
+     top: -350px;
+     left: 10px;
+     height: 300px;
+     display: flex;
+     flex-direction: column;
+     
+     align-items:center;
+ }
+ 
+ /*Logo de jalo en blanco */
+ .middle-five img{
+     width: 150px;
+     margin-bottom: 30px;
+ }
+ 
+ /*Para parrafo*/
+ .middle-five p{
+     margin-bottom: 50px;
+ }
+
+ /*Para footer*/
+ 
+ footer{
+    height: 500px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Menu de la derecha*/
+.footer-men{
+    text-align: left;
+    margin-right: 0px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/*Para separar un poco los menu*/
+.footer-men-uno{
+    margin-right: 20px;
+}
+
+/*Para los iconos de la izquierda*/
+/*Solo cambia que lo centramos y recorremos nuestro contenedor*/
+.footer-ic{
+    margin-left: -27px;
+
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.tt{
+    width: 350px;
+    margin-left: 100px;
+    margin-top: 50px;  
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    order: 3;
+}
+
+.logoFooter{
+    width: 75px;
+    margin-right: 20px;
+}
+
+/*Clases unicamente para establecer un orden y poner el menu arreiba y logos abajo*/
+#res-up{
+    order: 1;
+}
+
+#res-down{
+    order: 2;
+}
+
+.media-logos{
+    margin-left: -20px;
+}
+ }
+
+
+  

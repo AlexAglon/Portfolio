@@ -1,0 +1,105 @@
+body{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box; 
+   font-family: 'Source Sans Pro', sans-serif; 
+   
+}
+
+main{
+    width: 100%;
+    height: 610px;
+    background: rgb(48,32,72);
+    background: linear-gradient(0deg, rgba(48,32,72,1) 34%, rgba(35,30,50,1) 48%, rgba(35,30,51,1) 58%, rgba(24,27,32,1) 100%);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.principal{
+    width: 800px;
+    height: 500px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*contenedor del slogan*/
+.text-principal{
+    width: 700px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+/*Nombre de la autora*/
+.text-principal p:nth-of-type(1){
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 7px;
+}
+
+/*Slogan*/
+.text-principal p:nth-of-type(2){
+    letter-spacing: 2px;
+    font-size: 13px;
+    color: white;
+    margin-top: -15px;
+}
+
+/*para las lineas que aparecen en el centro*/
+.lineas{
+    width: 700px;
+    height: 60px;
+
+    display: flex;
+    flex-direction: row;
+}
+
+/*Para definir el tamaño de los contenedores que la haran de lineas*/
+.lineas div{
+    height: 100%;
+    width: 50%;
+}
+
+/*Para el borde de en medio*/
+.lineas div:nth-of-type(1){
+    border-right: 1px solid white;
+}
+
+/*contenedor del menu*/
+.menu{
+    width: 750px;
+    height: 50px;
+
+    display: flex;
+    flex-direction: row;
+}
+
+/*Elementos del menu*/
+.menu a{
+    width: 20%;
+    height: 100%;
+    border: 1px white solid;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-size: 13px;
+    letter-spacing: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu a:hover{
+    background: rgba(255, 255, 255, 0.132);
+}

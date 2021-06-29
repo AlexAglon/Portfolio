@@ -1,0 +1,221 @@
+:root{
+    --text-color:#9B3472;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.back{
+    position: relative;
+}
+
+.back{
+    position: absolute;
+}
+
+/*Para el contenedor del contenedor de nuestro menu*/
+.nav-cont{
+    background: white;
+    color: black;
+}
+/*Para el contenedor de nuestro menu*/
+.navbar{
+    background:white;
+}
+/*Para el color de nuestros links*/
+.nav-text{
+    text-decoration: none;
+    color: black;
+}
+
+/*para nuestro logo*/
+.logo{
+    width: 100px;
+}
+
+/*Estilos de nuestra barra entera
+  Ademas para acomodar nuestro nombre y nuestro menu separados*/
+.cont{
+    background: white;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*PRIMERA SECCION*/
+
+/*seccion 1*/
+.section1{
+    margin-top: 95px;
+    padding: 250px;
+    background-image:url(../assets/imagenes/portada.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*Para textos de la primera pantalla*/
+.princ-text{
+    color: var(--text-color);
+    font-size: 32px;
+}
+
+.scnd-text{
+    color: var(--text-color);
+    font-size: 22px;
+}
+
+.cont-service{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-service{
+    color:var(--text-color);
+}
+
+.img-service{
+    width: 100px;
+}
+
+.especial{
+    display: flex;
+    flex-direction: row;
+}
+
+/*Para nuestro carrousel*/
+
+.Cards-carrousel{
+    padding: 100px;
+    background: #c2d199;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/*Los tarjetas de nuestro carrousel*/
+.cards{
+    background: white;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cards img{
+    width: 250px;
+    height: 150px;
+    margin-bottom: 30px;
+}
+
+.cards p{
+    color: var(--text-color);
+    font-size: 18px;
+}
+
+/*Seccion 2*/
+
+.section2{
+    width: 100%;
+    height: 500px;
+    background-image: url(../assets/imagenes/lugares\ DondeEstaJalo.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 600px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+/*Logo de jalo*/
+.img1{
+    margin-left: 20px;
+    width: 200px;
+    height: 150px;
+}
+
+.section2 p{
+    margin-left: 40px;
+    color: var(--text-color);
+    font-size: 20px;
+}
+
+/*Seccion3*/
+
+.section3{
+    padding: 250px;
+
+    background-image: url(../assets/imagenes/Gustos.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1080px;
+}
+
+.section3 p{
+    color: transparent;
+}
+
+
+/*Footer*/
+.ele1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.ele1 img{
+    width: 50px;
+}
+
+.ele1 p{
+    color: var(--text-color);
+    margin-top:30px;
+}
+
+.ele2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.ele2 img{
+    width: 50px;
+}
+
+.ele2 p{
+    color: var(--text-color);
+    margin-top:30px;
+}
+
+/*Para el logo*/
+.footer-logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.footer-logo img{
+    width: 200px;
+}
+
+/*Para logos*/
+
+.redes{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: flex-end;
+}
+
+/**SECCION PARA MOVILES*/

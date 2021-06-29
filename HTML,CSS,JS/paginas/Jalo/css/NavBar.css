@@ -1,0 +1,102 @@
+:root{
+    --text-color:#9B3472;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+/*boton con el que daras click*/
+.menu_bar{
+    display: none;
+}
+
+/*estilos del menu*/
+header{
+    position: fixed;
+    width: 100%;
+}
+
+header nav{
+    width: 100%;
+    background: white;
+}
+
+/*Para hacer que se desborde nuestro menu hacemos un overflow*/
+header nav ul{
+    overflow: hidden;
+    list-style: none;
+}
+
+/*Flotamos el logo a la izquierda*/
+.logo{
+    float: left;
+}
+/*Tamaño de nuestro logo*/
+.logo a img{
+    width: 50px;
+}
+
+/*flotamos cada elemento de la lista a la derecha*/
+header nav ul li{
+    float: right;
+}
+
+/*Estilos de nuestros elemetnos de nuestro menu*/
+header nav ul li a{
+    color: var(--text-color);
+    padding: 20px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/*Para que cuando hagamos hover el menu se ponga de color blanco*/
+
+header nav ul li a:hover{
+    background: whitesmoke;
+}
+
+
+@media screen and (max-width:800px){
+    /*El contenedor de nuestro menu*/
+    header nav{
+        width: 80%;
+        height: 100%;
+        left: -100%;/*Para que nuestro menu no se vea al entrar en la pantalla que le indiquemos*/
+        margin: 0;
+        position: fixed;
+    }
+
+    /*Cada elemento de nuestro menu*/
+    header nav ul li{
+        display: block;
+        float: none;
+        border-bottom: 1px solid white;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    /*boton con el que daremos click para abrir y cerra incluye logo y la frase*/
+    .menu_bar{
+        display: block;
+        width: 100%;
+    }
+
+    /*Estilos para nuestro elemento conformado por frase e icono*/
+    .bt-menu{
+        display: block;
+        padding: 20px;
+        background: var(--text-color);
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        font-size: 22px;
+    }
+
+    /*Para alinear el icono de nuestro menu*/
+    .bt{
+        float: right;
+    }
+}
